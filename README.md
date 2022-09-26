@@ -20,3 +20,6 @@ Program sleeps for a second before sending new data to arduino in an effort to n
 
 Data is sent to arduino to regulate laser and servo using serial library which is right now configured for the noTheta algorithm as I only measured a conversion factor for pixels to degrees in a 640 width image and do not have compatibility for any other resolutions yet so as a general use script with frames of different resolutions than (640x480) the noTheta targeting system works better
 However if the resolution of the frame should be or can be 640x480 that would be the most ideal program to use (the theta targeting system)
+
+Threaded version of this program is available but unnecessary because speeds are inherently limited by the time.sleeps placed throughout the programs.
+It is recommended to not use threaded software.
